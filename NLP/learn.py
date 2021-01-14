@@ -9,7 +9,7 @@ from joblib import dump
 def Learn():
     logreg = LogisticRegression(n_jobs=-1)
 
-    data = read('myds1.csv', delimiter=';', encoding='ansi')
+    data = read('myds.csv', delimiter=';', encoding='ansi')
     print("Датасет загружен в память\nПриводим загруженные данные к необходимому виду...")
 
     X = Vectorize(data.Sentence)
