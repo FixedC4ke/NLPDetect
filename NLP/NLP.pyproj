@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="dictopen.py" />
+    <Compile Include="learn.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="morph.py" />
     <Compile Include="NLP.py" />
     <Compile Include="tnize.py" />
