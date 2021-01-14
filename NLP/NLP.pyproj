@@ -25,7 +25,7 @@
     <Compile Include="morph.py" />
     <Compile Include="NLP.py" />
     <Compile Include="tnize.py" />
-    <Compile Include="vectorze.py">
+    <Compile Include="vectorize.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
