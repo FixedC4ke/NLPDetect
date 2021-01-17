@@ -15,8 +15,6 @@ def GetClosestMatch(word, rusdict):
         return word
 
 def GetTokens(text):
-    #nltk.download('punkt') #загрузка словаря со знаками препинания
-    #nltk.download('stopwords')
     rusdict = GetDict()
     stop_words = stopwords.words("russian")
     tokens = nltk.word_tokenize(text.lower())
@@ -24,6 +22,5 @@ def GetTokens(text):
     morphd = []
     for token in tokens:
         nfword = morph.morpholize(token)
-        #morphd.append(nfword)
         morphd.append(GetClosestMatch(nfword, rusdict))
     return morphd
