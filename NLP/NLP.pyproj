@@ -27,6 +27,9 @@
     </Compile>
     <Compile Include="morph.py" />
     <Compile Include="NLP.py" />
+    <Compile Include="nltkfetch.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="tnize.py" />
     <Compile Include="vectorize.py">
       <SubType>Code</SubType>

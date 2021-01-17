@@ -4,11 +4,8 @@ from sklearn.model_selection import train_test_split as train
 from sklearn.linear_model import SGDClassifier
 from sklearn.preprocessing import LabelEncoder
 from joblib import dump
-import nltk
 
 def Learn():
-    nltk.download('punkt') #загрузка словаря со знаками препинания
-    nltk.download('stopwords')
     logreg = SGDClassifier(loss='log', n_jobs=-1)
 
     data = read('myds.csv', delimiter=';', encoding='ansi')
