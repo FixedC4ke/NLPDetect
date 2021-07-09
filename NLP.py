@@ -40,7 +40,7 @@ for i in range(0, len(probs)):
 
 choice = input("\nБыло ли предсказание верным? (y/n): ")
 if choice == 'n':
-    cat = int(input("Введите верную категорию (1: 'расизм', 2: 'сексизм', 3: 'призыв к насилию', 4:'распространение наркотиков', 5:'материалы для взрослых', 6:'спам', 0:'допустимые сообщения'): "))
+    cat = int(input(f"Введите верную категорию {catnames}: "))
     y = le.transform([cat])
     model.partial_fit(data, y)
 elif choice == 'y':
