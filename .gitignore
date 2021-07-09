@@ -342,3 +342,5 @@ healthchecksdb
 
 # Datasets
 *.csv
+# Dumps
+*.joblib
